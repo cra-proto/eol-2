@@ -9,12 +9,12 @@
       <!-- Meta data -->
       <!-- Meta data-->
       <!-- Load closure template scripts -->
-      <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_44/cdts/compiled/soyutils.js"></script>
-      <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_44/cdts/compiled/wet-en.js"></script>
+      <script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_43/cdts/compiled/soyutils.js"></script>
+      <script src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_43/cdts/compiled/wet-en.js"></script>
       <link href="https://test.canada.ca/covid-19-guidance/proto/css/alpha-beta-banner.css" rel="stylesheet">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
       <!-- Write closure template -->
-      <script type="text/javascript">
+      <script >
          document.write(wet.builder.refTop({
          }));
       </script>
@@ -26,7 +26,7 @@
       <div id="def-top">
       </div>
       <!-- Write closure template -->
-      <script type="text/javascript">
+      <script >
          var defTop = document.getElementById("def-top");
          defTop.outerHTML = wet.builder.top({
            lngLinks: [{
@@ -40,11 +40,11 @@
              href: "https://www.canada.ca/en.html"
            }, {
              title: "Taxes",
-             href: "../tax-theme/index.html"
+             href: "/eol/services/taxes.html"
            }
 		   , {
              title: "Income tax",
-             href: "../tax-income/index.html"
+             href: "/eol/services/income-tax/index.html"
                                            }, {
              title: "Doing taxes for someone who died",
              href: "index.html" }
@@ -61,124 +61,118 @@
 
           <h2 class="h3">On this page</h2>
             <ul>
-              <li><a href="#h_1">Determine who is representing the person who died</a></li>
-                <ul><li><a href="#h1_1a">Check if there is a will</a></li>
+              <li><a href="#h_1">Determine who is representing the person who died</a>
+                <ul>
+                  <li><a href="#h1_1a">Check if there is a will</a></li>
                 </ul>
+              </li>
               <li><a href="#h_2">Responsibilities of the representative</a></li>
-              <li><a href="#h_3">Submit documents</a></li>
+              <li><a href="#h_3">Confirm the legal representative with the CRA</a></li>
               <li><a href="#h_4">Access the tax records for someone who died</a></li>
             </ul>
 
-<h2 id="h_1">Determine who is representing the person who died</h2>
-<p>When someone dies, a representative is responsible for the adminstration of the esate of the person who died. The CRA requires that the representative file tax returns and resolves any balances owing of the person's account.</p>
+        <h2 id="h_1">Determine who is representing the person who died</h2>
+        <p>When someone dies, a representative is responsible for the adminstration of the estate of the person who died. The CRA requires that the representative file tax returns and resolves any balances owing of the person's account.</p>
 
-<!-- The representative of the person who died is determined if there is a will or no will.</p>-->
-<h3>Types of representatives</h3>
-<dl class="dl-horizontal">
-  <dt>Legal representative</dt>
-  <dd>The legal representative is typically executor named in the will who will be handling the estate. The will provides instruction if there are is more than one executor named and all other matters of the estate.</p>
-    <p>The estate is value of the financial assets, such as property and investments, and financial liabilities, such as balances owing to the CRA, of the person who died.</p>
-  <p>In Québec, you are the legal representative if you are the <a href="https://www.revenuquebec.ca/en/citizens/your-situation/liquidators-of-a-succession-steps-to-follow-after-a-death/">liquidator</a> of the estate and may have additional administrative duties.</p></dd>
-  <dt>Authorized representative</dt>
-  <dd>
-    <p>The legal representative may also choose to appoint one or more authorized representatives to manage the tax information on their behalf.</p>
-    <p>An authorized representive is someone who can view, get information about and update the tax information for individuals or businesses. This is typically an accountant or a lawyer who would need access to the tax information.</p>
-    <p>For additional information, see <a href="https://www.canada.ca/en/revenue-agency/services/tax/representative-authorization/overview.html">authorize a representative.</a></p>
-    <details>
-        <summary>If the person who died previously had authorized representatives</summary>
+        <!-- The representative of the person who died is determined if there is a will or no will.</p>-->
+        <h3>Types of representatives</h3>
+        <dl class="dl-horizontal">
+          <dt>Legal representative</dt>
+          <dd>
+            <p>The legal representative is typically the executor named in the will who will be handling the estate. The will provides instruction if there are more than one executor named and all other matters of the estate.</p>
+            <p>The estate is the value of the financial assets, such as property and investments, and financial liabilities, such as balances owing to the CRA, of the person who died.</p>
+            <p>In Québec, you are the legal representative if you are the <a href="https://www.revenuquebec.ca/en/citizens/your-situation/liquidators-of-a-succession-steps-to-follow-after-a-death/">liquidator</a> of the estate and may have additional administrative duties.</p>
+          </dd>
+          <dt>Authorized representative</dt>
+          <dd id="accountant">
+            <p>The legal representative may also choose to appoint one or more authorized representatives to manage the tax information on their behalf.</p>
+            <p>An authorized representive is someone who can view, get information about and update the tax information for individuals or businesses. This is typically an accountant or a lawyer who would need access to the tax information.</p>
+            <p>For additional information, see <a href="https://www.canada.ca/en/revenue-agency/services/tax/representative-authorization/overview.html">authorize a representative.</a></p>
+            <details>
+              <summary>If the person who died previously had authorized representatives</summary>
+              <p>If the person who died had authorized representatives for their tax accounts while they were alive, those authorized representatives will continue to be authorized on the account until a legal representative requests their removal. This can be done by online, by phone or fax or by mail.</p>
+              <h4>Online</h4>
+              <p>You can remove an authorized representative using <a href="https://www.canada.ca/en/revenue-agency/services/e-services/represent-a-client.html">Represent a Client.</a></p>
+              <h4>By phone or fax</h4>
+              <p>Contact the CRA by phone at 1-800-959-8281 or by fax at #-###-###-####.</p>
+              <h4>By mail</h4>
+              <p>By letter or fill in the form send to the <a href="https://www.canada.ca/en/revenue-agency/corporate/contact-information/tax-services-offices-tax-centres.html">mailing address of a tax centre.</a></p>
+            </details>
+          </dd>
+        </dl>
 
-    <p>If the person who died had authorized representatives for their tax account while they were alive, those authorized representatives will continue to be authorized on the account until a legal representative requests their removal. This can be done by online, by phone or fax or by mail.</p>
-    <h4>Online</h4>
-    <p>You can remove an authorized representative online using <a href="https://www.canada.ca/en/revenue-agency/services/e-services/represent-a-client.html">Represent a Client.</a></p>
-    <h4>By phone or fax</h4>
-    Contact the CRA by phone at 1-800-959-8281 or by fax at #-###-###-####.
-    <h4>By mail</h4>
-    By letter or fill in the form send to the <a href="https://www.canada.ca/en/revenue-agency/corporate/contact-information/tax-services-offices-tax-centres.html">mailing address of a tax centre.</a></p>
-    </details>
-  </dd>
-</dl>
+        <h3 id="h1_1a">Check if there is a will</h3>
+        <p>The will is typically where you will find information about who will represent the person who died and instructions on what to do with the estate.</p>
+        <details>
+          <summary>Yes, there is a will with a named executor</summary>
+          <p>If you are the executor of a will, you are the legal representative of the person who died and responsible for the adminstration of the estate. In some cases, a court document may also be issued appointing an executor.</p>
+          <p>You will need to provide a copy of the will or court document to the CRA to show that you are the legal representative.</p>
+        </details>
+        <details>
+          <summary>No, there is not a will or a named executor</summary>
+          <p>If a person dies without a will (intestate), or an executor has not been named in a will, certain individuals can apply to adminster the estate. Check with <a href="https://www.canada.ca/en/financial-consumer-agency/services/estate-planning/resources-estate-law.html">estate law of provincial or terriortial government</a> of the residence of the person who died for more information.</p>
+          <p>If there is no court-appointed representive or you are waiting for an appointment, you can request to be appointed as a representative for CRA matters using form <a href="https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/rc552.html">RC552 Appointing a Representative for a Deceased Person.</a> </p>
+          <p>Once your request has been approved, you will be authorized as a representative who can view, get information about and update the tax information for the person who died. This approval is for CRA purposes only and not for other adminstrative responsibilities outside the CRA.</p>
+        </details>
 
+        <h2 id="h_2">Responsibilities of the legal representative</h2>
+        <p>The legal representative is responsible for administration of the financial assets and liabilities of the person who died.</p>
+        <p>This means the legal representative can be held personally liable for outstanding tax balances owing, up the value of the distribution from the estate, if the assets have been distributed without getting a <a href="https://cra-proto.github.io/eol/services/income-tax/trust-income-tax/following-death/clearance-certificate.html">clearance certificate.</a></p>
 
+        <p>As the legal representative, you need to:</p>
+        <ul>
+          <li>make sure <a href="https://www.canada.ca/en/services/benefits/notify-government-death.html">the CRA has been notified of the death</a></li>
+          <li>provide the CRA with any requested documentation
+            <ul>
+              <li>make sure tax returns are filed for the person who died:
+                <ul>
+                  <li>any <a href="https://cra-proto.github.io/eol/services/income-tax/trust-income-tax/following-death/prepare-returns-someone-died.html">returns for the year the person died</a></li>
+                  <li>any <a href="https://www.canada.ca/en/revenue-agency/services/tax/trust-administrators/t3-return.html">T3 Trust Income Tax and Information returns</a>, if required</li>
+                  <li>any returns for previous years that the person who died did not file</li>
+                </ul>
+              </li>
+            </ul>
+            <li>confirm the estate resolved all outstanding balances owing to the CRA</li>
+            <li><a href="https://cra-proto.github.io/eol/services/income-tax/trust-income-tax/following-death/clearance-certificate.html">apply for a clearance certificate</a>, as needed, before distributing any assets of the estate</li>
+        </ul>
 
+        <p>The social insurance number (SIN) of the person who died must be provided with any request or documents you are sending to the CRA.</p>
+        <p>If the person who died was a resident of Québec, you may have additional responsibilities with Revenu Québec. Visit Revenu Québec's <a href="https://www.revenuquebec.ca/en/citizens/your-situation/liquidators-of-a-succession-steps-to-follow-after-a-death/">steps to follow after a death</a> for information.</p>
+        <h2 id="h_3">Confirm the legal representative with the CRA</h2>
+        <h3>What documents you need to submit</h3>
+        <p>As the legal representative, you need to submit documents to the CRA to confirm that you are the legal representative and provide updated contact information of the estate:</p>
+        <ul>
+          <li>a copy of the death certificate, or a funeral director's statement of death</li>
+          <li>a complete copy of the will or other legal document, such as grant of probate or letters of administration showing that you are the legal representative</li>
+          <li>the current mailing address of the estate</li>
+          <li>a completed <a href="https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4111/request-canada-revenue-agency-update-records.html">Request for the Canada Revenue Agency to Update Records form</a></li>
+          <li>a letter requesting if you need <a href="h_4">access to tax records for someone who died</a></li>
+        </ul>
 
-<h3 id="h1_1a">Check if there is a will</h3>
-<p>The will is typically where you will find information about who will represent the person who died and instructions on what to do with the esate.</p>
+        <h3>How to submit documents</h3>
+        <h4>Online</h4>
+        <h5>Represent a Client</h5>
 
-    <details>
-        <summary>Yes, there is a will with a named executor</summary>
+        <p>Represent a Client (RAC) provides secure and controlled online access to individual and business tax information of the person who died.</p>
+        <p>Once you register, you will be given a RepID and able to submit documents through your RAC account. Write the RepID and the SIN of the person who died on any of the documents you are submitting.</p>
+        <p>You must be registered for RAC <strong>before</strong> you can submit your documents online.</p>
+        <p>Learn more about <a href="https://www.canada.ca/en/revenue-agency/services/e-services/represent-a-client.html">Represent a Client</a></p>
 
-<p>If you are the executor of a will, you are the legal representative of the person who died and responsible for the adminstration of the estate. In some cases, a court document may also be issued appointing an executor.</p>
+        <h3>By mail or fax</h3>
+        <p>Documents can also be sent to the CRA by mail or fax. Mail or fax any required documents to your <a href="https://www.canada.ca/en/revenue-agency/corporate/contact-information/tax-services-offices-tax-centres.html">tax centre</a>.</p>
 
-<p>You will need to provide a copy of the will or court document to the CRA to show that you are the legal representative.</p>
-    </details>
+        <h2 id="h_4">Access the tax records for someone who died</h2>
 
-    <details>
-        <summary>No, there is not a will or a named executor</summary>
+        <h3>For online access</h3>
+        <p>You need to be registered for Represent a Client (RAC) and have a RepID. You can then write and submit a letter requesting access to the tax records of the person who died. This can be submitted when you confirm the legal representative or at a later date. You will need to provide your RepID and the SIN of the person who died in the request.
+          <p>Learn more about <a href="https://www.canada.ca/en/revenue-agency/services/e-services/represent-a-client.html">Represent a Client</a></p>
 
-<p>If a person dies without a will (intestate), or an executor has not been named in a will, certain individuals can apply to adminstrate the estate. Check with the provincial or terriortial government of the residence of the person who died for more information.</p>
+        <h3>For mail, phone or fax access</h3>
+        <p>Write and mail a letter requesting access to the tax records of the person who died and send it to the <a href="https://www.canada.ca/en/revenue-agency/corporate/contact-information/tax-services-offices-tax-centres.html">mailing address of your tax centre</a>. Include the SIN of the person who died in your request. This can be submitted when you confirm the legal representative or at a later date.<p>
+        <p>You can also call 1-800-959-8281 <strong>after</strong> you have sent in documents confirming the legal representative and those documents have been approved. Make sure you have the SIN of the person who died when you call.</p>
+        <p>The legal representative can also authorize additional representives to have mail, phone or fax access by completing and mailing in form <a href="https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/aut-01.html">AUT-01 Authorize a Representative for Offline Access</a>. This access is for phone, mail or fax information only. </p>
+        <p>Online access is only available through <a href="https://www.canada.ca/en/revenue-agency/services/e-services/represent-a-client.html"> Represent a Client</a>.</p>
 
-<p>If there is no court-appointed representive or you are waiting for an appointment, you can request to be appointed as a representative for CRA matters using form <a href="https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/rc552.html">RC552 Appointing a Representative for a Deceased Person.</a> </p>
-
-<p>Once your request has been approved, you will be authorized as a representative who can view, get information about and update the tax information for the person who died. This approval is for CRA purposes only and not for other adminstrative responsibilities outside CRA.</p>
-    </details>
-
-<h2 id="h_2">Responsibilities of the legal representative</h2>
-<p>The legal representative is responsible for administration of the financial assets and liabilities of the person who died.</p>
-<p>This means the legal representative can be held personally liable for outstanding tax balances owing, up the value of the distribution from the estate, if the assets have been distributed without obtaining a <a href="https://cra-proto.github.io/eol/services/income-tax/trust-income-tax/following-death/clearance-certificate.html">clearance certificate.</a></p>
-
-<p>As the legal representative, you need to:</p>
-<ul>
-  <li>make sure <a href="https://www.canada.ca/en/services/benefits/notify-government-death.html">CRA has been notified of the death</a></li>
-  <li>provide the CRA with any requested documentation</li>
-    <li>make sure the tax returns are filed for the person who died:</li>
-      <ul>
-        <li>any <a href="https://cra-proto.github.io/eol/services/income-tax/trust-income-tax/following-death/prepare-returns-someone-died.html">returns for the year the person died</a></li>
-        <li>any <a href="https://www.canada.ca/en/revenue-agency/services/tax/trust-administrators/t3-return.html">T3 Trust Income Tax and Information returns</a>, if required</li>
-      <li>any returns for previous years that the person who died did not file</li>
-    </ul>
-  <li>confirm the estate resolved all outstanding balances owing to the CRA</li>
-    <li><a href="https://cra-proto.github.io/eol/services/income-tax/trust-income-tax/following-death/clearance-certificate.html">apply for a clearance certificate</a>, as needed, before distributing any assets of the estate</li>
-</ul>
-
-<p>The social insurance number (SIN) of the person who died must be provided with any request or documents you are sending to the CRA.</p>
-<p>If the person who died was a resident of Québec, you may have additional responsibilities with Revenu Québec. Visit Revenu Québec's <a href="https://www.revenuquebec.ca/en/citizens/your-situation/liquidators-of-a-succession-steps-to-follow-after-a-death/">steps to follow after a death</a> for information.</p>
-<h2 id="h_3">Submit documents to confirm the legal representative</h2>
-<p>As the legal representative, you need to submit documents to the CRA to confirm that you are the legal representative and provide updated contact information of the estate:</p>
-
-<ul>
-  <li>a copy of the death certificate, or a funeral director's statement of death</li>
-  <li>a complete copy of the will or other legal document, such as grant of probate or letters of administration showing that you are the legal representative</li>
-  <li>the current mailing address of the estate</li>
-  <li>a completed <a href="https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4111/request-canada-revenue-agency-update-records.html">Request for the Canada Revenue Agency to Update Records form</a></li>
-</ul>
-
-<h3>How to submit documents</h3>
-<h4>Online</h4>
-
-<h5>Register for Represent a Client</h5>
-<p>Represent a Client (RAC) provides secure and controlled online access to individual and business tax information of the person who died. You must be registered for RAC <strong>before</strong> you can submit your documents online.</p>
-<p>Once you register, you will be given a RepID and able to submit documents through your RAC account. Write the RepID and the SIN of the person who died on any of the documents you are submitting.</p>
-<p>Learn more about <a href="https://www.canada.ca/en/revenue-agency/services/e-services/represent-a-client.html">Represent a Client</a></p>
-
-
-<h3>By mail or fax</h3>
-<p>Documents can also be sent to the CRA by mail or fax. Mail or fax any required documents to your <a href="https://www.canada.ca/en/revenue-agency/corporate/contact-information/tax-services-offices-tax-centres.html">tax centre</a>.</p>
-
-<h2 id="h_4">Access the tax records for someone who died</h2>
-<p>Once you have submitted the documents confirming you are the representative of the person who died and they have been approved, you can then request access to the tax records.</p>
-<h3>Online access</h3>
-<p>You need to be registered for Represent a Client (RAC) and have a RepID. You can then write and submit a letter through RAC requesting access to the tax records of the person who died. You will need to provide your RepID and the SIN of the person who died in the request.</p>
-<p>If you would like to have your authorized representive to have online access to the tax information of the person who died, see <a href="https://www.canada.ca/en/revenue-agency/services/tax/representative-authorization/how.html">Authorize a representative: How to give authorization</a></p>
-
-<h3>Mail, phone or fax access</h3>
-<p>Write and mail a letter requesting access to the tax records of the person who died and send it to the <a href="https://www.canada.ca/en/revenue-agency/corporate/contact-information/tax-services-offices-tax-centres.html">mailing address of your tax centre</a>. Include the SIN of the person who died in your request.<p>
-<p>You can also call 1-800-959-8281. Make sure you have the SIN of the person who died when you call.</p>
-<p>The legal representative can also authorize additional representives to have mail, phone or fax access by completing and mailing in form <a href="https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/aut-01.html">AUT-01 Authorize a Representative for Offline Access</a>. This access is for phone, mail or fax information only. </p>
-<p>Online access is only available through <a href="https://www.canada.ca/en/revenue-agency/services/e-services/represent-a-client.html"> Represent a Client</a>.</p>
-
-
-
-      </div>
 
 
         <!-- <section class="gc-srvinfo">
@@ -235,36 +229,41 @@
         </div> </section>
     </div>
   </section> -->
-
-
-         <div id="def-preFooter"></div>
-         <!-- Write closure template -->
-         <script type="text/javascript">
-            var defPreFooter = document.getElementById("def-preFooter");
-            defPreFooter.outerHTML = wet.builder.preFooter({
-            dateModified: "2020-05-05",
-            showPostContent: true,
-            showFeedback: true,
-            showShare: true
-            });
-         </script>
-      </main>
-      <div id="def-footer">
-      </div>
-      <!-- Write closure template -->
-      <script type="text/javascript">
-         var defFooter = document.getElementById("def-footer");
-         defFooter.outerHTML = wet.builder.footer({
-         showFooter: true,
-         showFeatures: true
-         });
-      </script>
-      <!-- Write closure template -->
-      <script type="text/javascript">
-         document.write(wet.builder.refFooter({
-         }));
-      </script>
-        <!--<script src="https://test.canada.ca/covid-19-guidance/proto/js/alpha-banner.js"></script>//-->
-	   <script src="https://cra-proto.github.io/eol/js/feedback-banner.js"></script>
-   </body>
+  <div class="owner">
+    <p>From:</p>
+    <ul class="list-inline">
+       <li><a href="https://www.canada.ca/en/revenue-agency.html">Canada Revenue Agency</a></li>
+    </ul>
+ </div>
+<div class="clearfix"></div>
+ <div id="def-preFooter"></div>
+ <!-- Write closure template -->
+ <script type="text/javascript">
+    var defPreFooter = document.getElementById("def-preFooter");
+    defPreFooter.outerHTML = wet.builder.preFooter({
+    dateModified: "2020-05-05",
+    showPostContent: true,
+    showFeedback: true,
+    showShare: true
+    });
+ </script>
+</main>
+<div id="def-footer">
+</div>
+<!-- Write closure template -->
+<script type="text/javascript">
+ var defFooter = document.getElementById("def-footer");
+ defFooter.outerHTML = wet.builder.footer({
+ showFooter: true,
+ showFeatures: true
+ });
+</script>
+<!-- Write closure template -->
+<script type="text/javascript">
+ document.write(wet.builder.refFooter({
+ }));
+</script>
+<!--<script src="https://test.canada.ca/covid-19-guidance/proto/js/alpha-banner.js"></script>//-->
+<script src="https://cra-proto.github.io/eol/js/feedback-banner.js"></script>
+</body>
 </html>

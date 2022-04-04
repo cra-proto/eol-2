@@ -43,10 +43,10 @@
                   href: "https://www.canada.ca/en.html"
                }, {
                   title: "Taxes",
-                  href: "../../../taxes.html"
+                  href: "/eol/services/taxes.html"
                }, {
                   title: "Income tax",
-                  href: "../../index.html"
+                  href: "/eol/services/income-tax/index.html"
                }, {
                   title: "Doing taxes for someone who died",
                   href: "../index.html"
@@ -64,7 +64,7 @@
          </script>
           <main role="main" property="mainContentOfPage" class="container">
               <section class="gc-nav">
-                <h1 property="name" id="wb-cont-nav">Prepare returns for someone who died</h1>
+                <h1 property="name" id="wb-cont-nav">Prepare tax returns for someone who died</h1>
                 <ul id="gc-navseq-nav" class="hidden-xs hidden-sm">
                     <li> <a class="gc-navseq-nav-btn" href="#gc-navseq-header">Go to navigation menu</a> </li>
                     <li> <a class="gc-navseq-nav-btn" href="#wb-cont">Skip to main content</a> </li>
@@ -341,7 +341,7 @@ var t3Year = d3.getFullYear();
 var c6 = new Date(t3Year, 11, 31 + dayz[0]);
    //calculate based on value in select//
 
-   if (e.value == "70(1)" || e.value == "104(23)(d)") {
+   if (e.value == "70(1)" || e.value == "104(23)(d)" || e.value == "150(4)") {
 
      if (c1 > c2) {
        var newDt = new Date(c1)
