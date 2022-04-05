@@ -112,42 +112,136 @@
                <h3 id="h-1b">Unclaimed capital losses from previous tax years</h3>
                <p>If the deceased has unclaimed capital losses from previous tax years, they can usually be found in Represent a Client under "Carryover amounts" in the Tax returns section.</p>
                
-               <h3 id="h-1c">Carry back capital losses from the first year of a <abbr title="Graduated Rate Estate">GRE</abbr></h3>
+               <h3 id="h-1c">Carry back capital losses from the first year of a <abbr title="Graduated Rate Estate">GRE</abbr> - 164(6)</h3>
                <p>If you have not yet filed the final return, skip this section. The legal representative will need to amend the final return after filing the T3 return for the estate.</p>
                <p>If the estate disposes of capital property, the result may be a net capital loss on a T3 Trust Income Tax and Information Return. Additionally, if the estate disposes of depreciable property, the result may be a terminal loss on the T3.</p>
                <p>In the&nbsp;first tax year of a deceased person's graduated rate estate, the legal representative can&nbsp;elect to&nbsp;treat all or part of these losses as losses of the deceased on the deceased's final return.</p>
                <p>A net capital loss realized in this first tax year cannot be applied to any tax year before the year of death. For more information, refer to "164(6) election" in Chapter 3 of the <a href="https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/t4013.html">T4013, T3 Trust Guide</a>.</p>
                <p>When filing the amended T1 final return of the deceased, you must clearly identify at the top of the return that you are amending it as a 164(6) election or a 164(6.1) election.</p>
+               <ul>
+                  <li>If you are applying a loss carried back from the T3, you can subtract it directly on the line 12700 amount. There is no need to adjust it or report it on a separate line.</li>
+                  <li>Apply losses from the 164(6) election to other forms of income, as if you were applying other losses from the final year.</li>
+               </ul>
 
                <h2 id="h-2">Apply net capital losses against capital gains in the final return</h2>
                <p>If there is a capital gain on line 12700 of the final return (or the return for the previous year), you must first apply capital losses against this capital gain.</p>
-               <p>If you are applying unclaimed capital losses from previous tax years, it must be applied before any current year losses.</p>
-               <p>If you are applying a loss carried back from the T3, you can subtract it directly on the line 12700 amount. There is no need to adjust it or report it on a separate line.</p>
+               <p>If you have any unclaimed capital losses from previous tax years, it must be applied before any current year losses.</p>
 
                <h3>Adjust unclaimed losses from previous tax years</h3>
                <p>To apply an unclaimed capital loss from a previous tax year, you must first:</p>
                <ol class="lst-stps stps-strpd">
-                  <li>Adjust the unclaimed capital loss by the <a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-12700-capital-gains/you-calculate-your-capital-gain-loss/inclusion-rates-previous-years.html">inclusion rate</a> for the year in which it was incurred.
-                     <ul>
+                  <li>Adjust the unclaimed prior year capital loss by the <strong>adjustment factor</strong> for the year in which it was incurred.
+                     <!-- <ul>
                         <li>If the deceased has unclaimed losses from before 1985, refer to <a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/personal-income/line-12700-capital-gains/capital-losses-deductions/other-year-losses-carried-forward/losses-incurred-before-may-23-1985.html">Losses incurred before May 23, 1985</a>.</li>
+                     </ul> -->
+                     <ul>
+                        <li>This is required to ensure the calculated capital loss from other periods is equal to what it would be in the year of the final return</li>
                      </ul>
                   </li>
                   <li>Apply adjusted capital losses on line 25300 up to the full amount of capital gains reported on line 12700.</li>
-                  <li>If there are remaining unclaimed losses, readjust the remainder back to before you applied the inclusion rate.
-                     <ul>
+                  <li>If there are remaining unclaimed losses, readjust the remainder back to before you applied the inclusion rate with the <strong>readjustment factor</strong>.
+                     <!-- <ul>
                         <li>For example, if the remaining capital loss was multiplied by the inclusion rate of 1/2, reverse that by multiplying it by 2. If it was 3/4, then multiply it by 4/3.</li>
-                     </ul>
+                     </ul> -->
                   </li>
                </ol>
+               <table class="table table-striped ">
+                  <caption class="wb-inv">Inclusion Rates and Adjustment Factors for capital losses</caption>
+                  <thead>
+                     <tr>
+                        <th scope="col">Tax year</th>
+                        <th scope="col">Inclusion Rate</th>
+                        <th scope="col">Adjustment Factor</th>
+                        <th scope="col">Readjustment Factor</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td>Before May 22, 1988</td>
+                        <td>1/2</td>
+                        <td>1 (no adjustment)</td>
+                        <td>1 (no adjustment)</td>
+                     </tr>
+                     <tr>
+                        <td>In 1988 and 1989</td>
+                        <td>2/3</td>
+                        <td>3/4</td>
+                        <td>4/3</td>
+                     </tr>
+                     <tr>
+                        <td>From 1990 to 1999</td>
+                        <td>3/4</td>
+                        <td>2/3</td>
+                        <td>3/2</td>
+                     </tr>
+                     <tr>
+                        <td>In 2000</td>
+                        <td>Variable - check in Represent a Client</td>
+                        <td>1 / (2 x [Inclusion Rate for 2000])</td>
+                        <td>2 x [Inclusion Rate for 2000]</td>
+                     </tr>
+                     <tr>
+                        <td>From 2001 to 2021</td>
+                        <td>1/2</td>
+                        <td>1 (no adjustment)</td>
+                        <td>1 (no adjustment)</td>
+                     </tr>
+                  </tbody>
+               </table>
+
+
+               <details>
+                  <summary>Example of adjustments to unclaimed losses from previous years</summary>
+                  <p>A woman died in August of 2021. You have these details about her tax matters:</p>
+                  <ul>
+                     <li><strong>Capital loss in 1999:</strong> $24,000</li>
+                     <li><strong>Taxable capital gain in 2021:</strong> $ 6,000</li>
+                     <li><strong>Capital gains deductions claimed to date:</strong> $ 4,000</li>
+                  </ul>
+                  <p>In the original return for 1999, the net capital losses were calculated as:</p>
+                  <ul class="fa-ul lst-spcd mrgn-bttm-lg">
+                     <li><span class="mrgn-tp-0 text-muted h5">$24,000</span> (capital loss in 1999)</li>
+                     <li class="brdr-bttm"><span class="fas fa-times fa-li"><span class="wb-inv">multiplied by</span></span> <span class="text-muted h5">3/4</span> (inclusion rate for 1999)</li>
+                     <li><span class="fas fa-equals fa-li"><span class="wb-inv">equals</span></span> <span class="mrgn-tp-0 text-muted h5">$18,000</span> (net capital loss from 1999, never applied)</li>
+                  </ul>
+                  <p>This leaves an unclaimed net capital loss of $18,000 to be carried forward to other tax years.</p>
+                  <p>You decide to use the 1999 loss to reduce the 2021 taxable capital gain and to use any amount left to reduce other income for 2021.</p>
+                  <p>You have to adjust the 1999 net capital loss before you can apply it. Multiply it by 2/3 to get the adjusted net capital loss:</p>
+                  <ul class="fa-ul lst-spcd mrgn-bttm-lg">
+                     <li><span class="mrgn-tp-0 text-muted h5">$18,000</span> (net capital loss in 1999, never applied)</li>
+                     <li class="brdr-bttm"><span class="fas fa-times fa-li"><span class="wb-inv">multiplied by</span></span> <span class="text-muted h5">2/3</span> (adjustment factor for 1999)</li>
+                     <li><span class="fas fa-equals fa-li"><span class="wb-inv">equals</span></span> <span class="mrgn-tp-0 text-muted h5">$12,000</span> (adjusted capital losses to be applied against capital gains)</li>
+                  </ul>
+                  <p>Note that $12,000 is 1/2 of the original capital loss from 1999 of $24,000. The Inclusion Rate for 2001 and later years is 1/2.</p>
+                  <p>To reduce the 2021 taxable capital gain, use the lesser of:</p>
+                  <ul>
+                     <li>$12,000 (adjusted net capital loss)</li>
+                     <li>$6,000 (2021 taxable capital gain)</li>
+                  </ul>
+                  <p>After you use $6,000 of the loss to reduce capital gains on line 12700 to zero, you still have $6,000 ($12,000 – $6,000) remaining in unclaimed capital losses. You can use this amount to reduce the deceased’s other income for 2021.</p>
+                  <p>To determine the amount to use, you have to readjust the $6,000. Because the loss occurred in 1999, multiply the amount left by 3/2 to get the readjusted balance:</p>
+                  <ul class="fa-ul lst-spcd mrgn-bttm-lg">
+                     <li><span class="mrgn-tp-0 text-muted h5">$6,000</span> (remainder of adjusted capital losses to be applied against capital gains)</li>
+                     <li class="brdr-bttm"><span class="fas fa-times fa-li"><span class="wb-inv">multiplied by</span></span> <span class="text-muted h5">3/2</span> (readjustment factor for 1999)</li>
+                     <li><span class="fas fa-equals fa-li"><span class="wb-inv">equals</span></span> <span class="mrgn-tp-0 text-muted h5">$9,000</span> (readjusted capital losses)</li>
+                  </ul>
+                  <p>From the readjusted balance, subtract all capital gains deductions claimed to date:</p>
+                  <ul class="fa-ul lst-spcd mrgn-bttm-lg">
+                     <li><span class="mrgn-tp-0 text-muted h5">$9,000</span> (readjusted capital losses)</li>
+                     <li class="brdr-bttm"><span class="fas fa-minus fa-li"><span class="wb-inv">minus</span></span> <span class="text-muted h5">$4,000</span> (all capital gains deductions claimed in previous tax years)</li>
+                     <li><span class="fas fa-equals fa-li"><span class="wb-inv">equals</span></span> <span class="mrgn-tp-0 text-muted h5">$5,000</span> (capital losses to be applied to other income in the final return)</li>
+                  </ul>
+                  <p>You can use $5,000 to reduce the deceased’s other income for 2021. If you decide not to use the total of this balance in 2021, you can use the amount that is left to reduce other income for 2020.</p>
+               </details>
 
                <h2 id="h-3">Apply net capital losses against other types of income in the final return</h2>
                <p>Unlike in other tax years, remaining capital losses in the final return and the return for the year before the final year can be applied to other forms of income.</p>
 
-               <h3>Apply net capital losses from the final year or the T3</h3>
+               <h3>Apply net capital losses from the final year</h3>
                <p>If there are capital losses in line 12700 from calculating capital gains in the final return or from a carry back from the first year of a <abbr title="Graduated Rate Estate">GRE</abbr>, you can apply them to reduce other income in the final return (or return from the year before the death) after using one of the following calculation methods:</p>
 
                <details>
-                  <summary>Method A: Reduce previous year capital gains first</summary>
+                  <summary>Method A: Reduce previous year capital gains before applying against other income</summary>
                   <p>Using Method A, you must first reduce all capital gains from the last 3 tax years before the year of death to $0, before you can apply remaining net capital losses against other income.</p>
                   <p class="h3">How to carry a loss back to a prior year return</p>
                   <p>You can carry back a 2021 net capital loss to reduce any taxable capital gains in any of the three tax years before the year of death. If you are applying it against taxable capital gains realized in 2018, 2019, or 2020, you do not need to make any adjustment because the inclusion rate is the same in all three years. The loss you carry back cannot be more than the taxable capital gains in those years.</p>
@@ -163,7 +257,7 @@
                   <p>Do not use a capital loss claimed against other income at line 12700 in the calculation of net income for the purposes of calculating other amounts such as social benefit repayments, provincial or territorial tax credits, and those non-refundable tax credits requiring the use of net income.</p>
                </details>
                <details>
-                  <summary>Method B: Apply against other income in the final return</summary>
+                  <summary>Method B: Apply against other income in the final year and/or the previous year</summary>
                   <p>You can choose not to carry back the net capital loss to reduce taxable capital gains from earlier years. You may prefer to reduce other income on the final return, the return for the year before the year of death, or both returns.</p>
                   <p class="h3">Subtract previous year capital gains deductions</p>
                   <p>However, before you do this, you have to calculate the amount you can use.</p>
@@ -190,51 +284,15 @@
                   <p>If you choose to use this method, you will first deduct his capital gains deductions of $4,000 from his net capital loss in 2021 of $11,000. You can now use the remaining $7,000 to reduce the man’s other income for 2021 or 2020, or for both years.</p>
                </details>
                
+               <h3>Request an adjustment to a previous year return</h3>
                <p>If you claim any remaining net capital loss in the year before the year of death, you will need to complete <a href="https://www.canada.ca/en/revenue-agency/services/forms-publications/forms/t1-adj.html">Form T1-ADJ, T1 Adjustment Request</a>, or send the CRA a signed letter providing the details of your request.</p>
                <p>Send your Form T1-ADJ or letter separately from the deceased’s final return. Applying a 2021 net capital loss to a previous year may reduce any capital gains deductions the deceased claimed in that year or a following year. </p>
 
 
                <h3>Apply unclaimed losses from previous tax years</h3>
                <p>Before you can apply capital losses from previous tax years to other income for the year of death or the year before the year of death, you must subtract all capital gains deductions claimed by the deceased in previous tax years.</p>
-               <p>You do not need to adjust previous tax years by the inclusion rate when applying them against other types of income.</p>
+               <p>Do not adjust previous year losses when applying them against other income.</p>
                <p>Claim the losses on <a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/about-your-tax-return/tax-return/completing-a-tax-return/deductions-credits-expenses/line-25300-net-capital-losses-other-years.html">Line 25300 - Net capital losses of other years</a></p>
-
-               <details>
-                  <summary>Example of adjustments to unclaimed losses from previous years</summary>
-                  <p>A woman died in August of 2021. You have these details about her tax matters:</p>
-                  <ul>
-                     <li><strong>Net capital loss in 1999, never applied:</strong> $18,000</li>
-                     <li><strong>Taxable capital gain in 2021:</strong> $ 6,000</li>
-                     <li><strong>Capital gains deductions claimed to date:</strong> $ 4,000</li>
-                  </ul>
-                  <p>You decide to use the 1999 loss to reduce the 2021 taxable capital gain and to use any amount left to reduce other income for 2021.</p>
-                  <p>You have to adjust the 1999 net capital loss before you can apply it. Multiply it by 2/3 to get the adjusted net capital loss:</p>
-                  <ul class="fa-ul lst-spcd mrgn-bttm-lg">
-                     <li><span class="mrgn-tp-0 text-muted h5">$18,000</span> (net capital loss in 1999, never applied)</li>
-                     <li class="brdr-bttm"><span class="fas fa-times fa-li"><span class="wb-inv">multiplied by</span></span> <span class="text-muted h5">2/3</span> (inclusion rate for 1999)</li>
-                     <li><span class="fas fa-equals fa-li"><span class="wb-inv">equals</span></span> <span class="mrgn-tp-0 text-muted h5">$12,000</span> (adjusted capital losses to be applied against capital gains)</li>
-                  </ul>
-                  <p>To reduce the 2021 taxable capital gain, use the lesser of:</p>
-                  <ul>
-                     <li>$12,000 (adjusted net capital loss)</li>
-                     <li>$6,000 (2021 taxable capital gain)</li>
-                  </ul>
-                  <p>After you use $6,000 of the loss to reduce the gain to zero, you still have $6,000 ($12,000 – $6,000) left. You can use this amount to reduce the deceased’s other income for 2021.</p>
-                  <p>To determine the amount to use, you have to readjust the $6,000. Because the loss occurred in 1999, multiply the amount left by 3/2 to get the readjusted balance:</p>
-                  <ul class="fa-ul lst-spcd mrgn-bttm-lg">
-                     <li><span class="mrgn-tp-0 text-muted h5">$6,000</span> (remainder of adjusted capital losses to be applied against capital gains)</li>
-                     <li class="brdr-bttm"><span class="fas fa-times fa-li"><span class="wb-inv">multiplied by</span></span> <span class="text-muted h5">3/2</span> (inverse of the inclusion rate for 1999)</li>
-                     <li><span class="fas fa-equals fa-li"><span class="wb-inv">equals</span></span> <span class="mrgn-tp-0 text-muted h5">$9,000</span> (readjusted capital losses)</li>
-                  </ul>
-                  <p>From the readjusted balance, subtract all capital gains deductions claimed to date:</p>
-                  <ul class="fa-ul lst-spcd mrgn-bttm-lg">
-                     <li><span class="mrgn-tp-0 text-muted h5">$9,000</span> (readjusted capital losses)</li>
-                     <li class="brdr-bttm"><span class="fas fa-minus fa-li"><span class="wb-inv">minus</span></span> <span class="text-muted h5">$4,000</span> (all capital gains deductions claimed in previous tax years)</li>
-                     <li><span class="fas fa-equals fa-li"><span class="wb-inv">equals</span></span> <span class="mrgn-tp-0 text-muted h5">$5,000</span> (capital losses to be applied to other income in the final return)</li>
-                  </ul>
-                  <p>You can use $5,000 to reduce the deceased’s other income for 2021. If you decide not to use the total of this balance in 2021, you can use the amount that is left to reduce other income for 2020.</p>
-               </details>
-
               
                <div class="hidden-md hidden-lg" data-ajax-replace="index.html #related-menu>"> </div>
             </section>
