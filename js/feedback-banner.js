@@ -5,7 +5,14 @@ alphaBanner.insertAdjacentHTML('afterbegin', '<section class="experimental alpha
 
 /*<section class="experimental alpha-top" role="banner"><h2 class="wb-inv">This webpage is alpha and is looking for feedback</h2><div class="container mrgn-tp-sm mrgn-bttm-sm"><small>Provide feedback for this prototype web page</small>&nbsp;&nbsp;<a href="https://craepmd.optimalworkshop.com/questions/b4r456f3/questions/before" class="btn btn-sm btn-primary" target="_blank" rel="noopener noreferrer">Feedback form<span class="wb-inv"> opens in new window</span></a></div></section > */
 
-
+//Seperate script to null all canada.ca links to a 404 page (including GC menu) and redirect some in menu
+$( ".gcweb-menu" ).on( "wb-ready.gcweb-menu", function( event ) {
+	$("a[href='https://www.canada.ca/en/services/taxes.html']").attr("href", "https://cra-proto.github.io/eol/services/taxes.html").addClass("prototype");
+	$("a[href='https://www.canada.ca/en/services/taxes/income-tax.html']").attr("href", "https://cra-proto.github.io/eol/services/income-tax/index.html").addClass("prototype");
+	$("a[href='https://www.canada.ca/en/services/finance/manage.html']").attr("href", "https://cra-proto.github.io/eol/services/finance/manage.html").addClass("prototype");
+	$(".gcweb-menu a:not(.prototype)").attr("href", "https://cra-proto.github.io/eol/validation/404.html");	
+	$("a[href*='canada.ca']").attr("href", "https://cra-proto.github.io/eol/validation/404.html");
+});
 
 //Seperate script to null all canada.ca links to a 404 page
 $(document).ready(function(){$("a[href*='canada.ca']").attr("href", "https://cra-proto.github.io/eol-2/validation/404.html");});
