@@ -112,7 +112,7 @@
                       </div>
                       <div class="checkbox provisional gc-chckbxrdio hidden" id="own-business">
                         <input id="run-business" type="checkbox" />
-                        <label for="run-business">Deceased or deceased's spouse or common-law partner ran a business on the date of death</label>
+                        <label for="run-business">Deceased or deceased's spouse or common-law partner ran a business/label>
                       </div>
                       <div id="noa-question" class="hidden">
                         <fieldset class="gc-chckbxrdio">
@@ -325,7 +325,8 @@ var g = document.getElementById("deemed-ye");
    var year = d.getFullYear();
 var t3Year = d3.getFullYear();
    var month = d.getMonth();
-   var day = d.getUTCDate();
+
+var day = d.getUTCDate();
    var yearz = [1];
    var monthz = [6];
    var dayz = [90];
@@ -398,6 +399,7 @@ var c6 = new Date(t3Year, 11, 31 + dayz[0]);
      year: "numeric",
      month: "long",
      day: "numeric"
+	   /*,timeZone: 'UTC'	   */
    }
 
    document.getElementById("date-output").innerHTML = newDt.toLocaleString(langSet, longString);
